@@ -41,7 +41,8 @@ Once the Kicad project is shared, you can modify freely according your needs.
 The CAN interface need a CAN Transceiver breadboard like CJMCU-1051 (or any TJA1051) with 3.3Volts interface for TX and RX.
 The buzzer circuit is simple but powerfull.
 For the USB OTG you are free to use what kind of USB is more suitable for you. The board export 5 pins there the 4th is not connected.
-With this board you have:
+
+## Board details
 	- 4 UARTs - One have the I2C to be used with a GPS + Compass
  	- 2 I2Cs - One is under the Power header
   	- 4 GPIO pins with GND
