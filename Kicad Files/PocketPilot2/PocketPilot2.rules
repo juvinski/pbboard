@@ -1,0 +1,86 @@
+
+(rules PCB PocketPilot2.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute off)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule Top
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 4.0)
+    )
+    (layer_rule Bottom
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.2)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clearance 200.0)
+    (clearance 125.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle Top 800.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+  (class "kicad_default"
+    GND "/USB_POS" "/UART1_TX" "unconnected-(P1-Pin_25-Pad25)" "unconnected-(P1-Pin_12-Pad12)" "unconnected-(P1-Pin_17-Pad17)" "/GPS_RX" "unconnected-(P1-Pin_23-Pad23)"
+    "/GPS_TX" "unconnected-(P1-Pin_19-Pad19)" "/UART1_RX" "unconnected-(P1-Pin_18-Pad18)" "unconnected-(P1-Pin_7-Pad7)" "unconnected-(P1-Pin_4-Pad4)" "/UART4_TX" "/UART4_RX"
+    "/UART5_RX" "unconnected-(P1-Pin_24-Pad24)" "/UART5_TX" "unconnected-(P1-Pin_2-Pad2)" "Net-(O15-Pin_2)" "unconnected-(P1-Pin_13-Pad13)" "Net-(O1-Pin_2)" /GPIO4
+    "unconnected-(O18-Pin_4-Pad4)" "unconnected-(P1-Pin_21-Pad21)" "unconnected-(P1-Pin_3-Pad3)" "unconnected-(P1-Pin_35-Pad35)" "/BUZZER_OUT" "unconnected-(P1-Pin_10-Pad10)" /GPIO1 "unconnected-(P1-Pin_27-Pad27)"
+    "unconnected-(P1-Pin_5-Pad5)" /GPIO2 "/CAN_RX" /GPIO3 "/LED_A" "/LED_B" "unconnected-(P2-Pin_30-Pad30)" "/SPI_CS0"
+    "unconnected-(P2-Pin_16-Pad16)" "unconnected-(P2-Pin_19-Pad19)" "unconnected-(P2-Pin_18-Pad18)" "/CAN_TX" "/LED_C" /OUT4 "unconnected-(P2-Pin_14-Pad14)" "unconnected-(P2-Pin_35-Pad35)"
+    "unconnected-(P2-Pin_3-Pad3)" "Net-(Q1-B)" /OUT5 "/SPI_CLK" "unconnected-(P2-Pin_13-Pad13)" "unconnected-(P2-Pin_26-Pad26)" "unconnected-(P2-Pin_22-Pad22)" "/SPI_CS1"
+    "/SPI_MISO" +3.3V "/SPI_MOSI" /OUT6 /OUT3 /OUT1 /OUT2 "unconnected-(U1-Pin_5-Pad5)"
+    +5V "/I2C_SCL" "/I2C_SDA" "/RC_INPUT" "Net-(LEDA1-A)" "Net-(LEDB1-A)" "Net-(LEDC1-A)" "/USB_NEG"
+    "unconnected-(P2-Pin_12-Pad12)" "/I2C3_SDA" "/I2C3_SCL"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+)
