@@ -48,7 +48,7 @@ For the USB OTG you are free to use what kind of USB is more suitable for you. T
   	- 4 GPIO pins with GND
    	- 6 Outputs
    	- Buzzer output for an Active buzzer
-*** All pins is just 3.3 Volts ***
+*** All pins is just 3.3 Volts ***  
 *** 5 Volts will brick your PocketBeagle 2 ***
 
 # Software Instructions
