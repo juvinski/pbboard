@@ -7,7 +7,7 @@
 	(title_block
 		(title "PocketPilot2 - DIY Cape for Ardupilot")
 		(date "2025-06-30")
-		(rev "1.0")
+		(rev "1.1")
 		(comment 1 "juvinski®")
 		(comment 3 "https://github.com/juvinski/pbboard")
 		(comment 4 "For information, instrunctions:")
@@ -3789,6 +3789,10 @@
 		(uuid "e1fc7012-bb44-4370-a4ae-28f496add979")
 	)
 	(no_connect
+		(at 44.45 63.5)
+		(uuid "00d3548a-a89e-4cb9-abf0-471f7a7d5093")
+	)
+	(no_connect
 		(at 86.36 40.64)
 		(uuid "0e67f8dc-e67b-4fa4-810b-010863a61f94")
 	)
@@ -3817,6 +3821,10 @@
 		(uuid "1ef6a86f-32c3-4c84-b6ea-332228dd0c81")
 	)
 	(no_connect
+		(at 44.45 60.96)
+		(uuid "2281ec1a-939f-48b0-a703-2520b1c89561")
+	)
+	(no_connect
 		(at 31.75 68.58)
 		(uuid "24affde3-ff3b-4969-9e47-22f2983defa5")
 	)
@@ -3837,6 +3845,10 @@
 		(uuid "671fec8b-a962-443c-a2eb-e9c9475298d7")
 	)
 	(no_connect
+		(at 44.45 68.58)
+		(uuid "6b374872-feef-40d3-ac1a-71c95d48dbc5")
+	)
+	(no_connect
 		(at 31.75 53.34)
 		(uuid "734d4a7c-a7bf-4171-93f5-f160ec1fa9c4")
 	)
@@ -3845,16 +3857,8 @@
 		(uuid "7487c645-212f-4284-a695-eb5abd65b98b")
 	)
 	(no_connect
-		(at 44.45 25.4)
-		(uuid "752e1c1f-0850-4e1b-ba8e-07c2bda094bd")
-	)
-	(no_connect
 		(at 86.36 60.96)
 		(uuid "76acfc8f-314d-4a19-86ed-48db277d74c9")
-	)
-	(no_connect
-		(at 44.45 38.1)
-		(uuid "7a82b638-e02a-477f-aefe-11dd93b768b9")
 	)
 	(no_connect
 		(at 31.75 33.02)
@@ -3899,10 +3903,6 @@
 	(no_connect
 		(at 73.66 48.26)
 		(uuid "f969ffd3-c099-446d-9477-72a10c681438")
-	)
-	(no_connect
-		(at 44.45 27.94)
-		(uuid "fd4ab39a-005b-4543-9845-ae5198183ed9")
 	)
 	(no_connect
 		(at 31.75 55.88)
@@ -4340,16 +4340,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 68.58) (xy 48.26 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c956d69-0696-4662-b507-708edc26c108")
-	)
-	(wire
-		(pts
 			(xy 66.04 30.48) (xy 73.66 30.48)
 		)
 		(stroke
@@ -4407,6 +4397,16 @@
 			(type default)
 		)
 		(uuid "45e31e7c-24ee-410c-aa2a-d9a01c721b02")
+	)
+	(wire
+		(pts
+			(xy 44.45 38.1) (xy 48.26 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490ca219-7820-4386-a27d-a529786bcc5d")
 	)
 	(wire
 		(pts
@@ -4677,16 +4677,6 @@
 			(type default)
 		)
 		(uuid "6f567ce9-761a-4f1f-b00e-f25a588ec230")
-	)
-	(wire
-		(pts
-			(xy 44.45 60.96) (xy 48.26 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f82731f-6f89-45a6-9100-e16c29e2edea")
 	)
 	(polyline
 		(pts
@@ -5290,6 +5280,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 27.94) (xy 48.26 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d7e263-3c04-4afd-8276-7932d4c22fab")
+	)
+	(wire
+		(pts
 			(xy 22.86 115.57) (xy 33.02 115.57)
 		)
 		(stroke
@@ -5410,16 +5410,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 63.5) (xy 48.26 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3ac278b-82f7-47e1-8b3a-7054f6776b14")
-	)
-	(wire
-		(pts
 			(xy 118.11 54.61) (xy 127 54.61)
 		)
 		(stroke
@@ -5447,6 +5437,16 @@
 			(type default)
 		)
 		(uuid "d4b514ae-6186-4b4b-a2df-af8d1b7592a9")
+	)
+	(wire
+		(pts
+			(xy 44.45 25.4) (xy 48.26 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4c1f830-de0c-4cb6-8331-3adb932ddec4")
 	)
 	(wire
 		(pts
@@ -5889,7 +5889,7 @@
 		(uuid "2c16517c-777f-4820-94d9-4058856af687")
 	)
 	(label "GPIO4"
-		(at 48.26 68.58 0)
+		(at 48.26 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6099,7 +6099,7 @@
 		(uuid "5c930cf8-d0d5-4a9d-9397-f9342a0cbe1a")
 	)
 	(label "GPIO1"
-		(at 48.26 60.96 0)
+		(at 48.26 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6129,7 +6129,7 @@
 		(uuid "6844173e-1812-4f2f-b19d-90dfadc49289")
 	)
 	(label "GPIO2"
-		(at 48.26 63.5 0)
+		(at 48.26 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10271,7 +10271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 132.08 49.53 0)
 			(effects
 				(font
