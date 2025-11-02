@@ -19,21 +19,21 @@ I believe the same file can be used by other online PCB manufactures.
 # Hardware instructions
 ## Board manufacturing
 ### Board version 1.1
-![Board manufacturing](Images/board1.png)
+![Board manufacturing](Images/board1.jpg)
 ### Soldering resistors, transistor and rc output headers 
-![Board manufacturing](Images/board2.png)
+![Board manufacturing](Images/board2.jpg)
 ### Soldering output headers 
-![Board manufacturing](Images/board3.png)
+![Board manufacturing](Images/board3.jpg)
 ### Soldering Pocketbeagle 2 headers
-![Board manufacturing](Images/board4.png)
+![Board manufacturing](Images/board4.jpg)
 ### Soldering Leds
-![Board manufacturing](Images/board5.png)
+![Board manufacturing](Images/board5.jpg)
 ### Preparing the IMU - using double sided tape
 ![Board manufacturing](Images/imu1.jpg)
 ### Soldering the IMU
-![Board manufacturing](Images/board6.png)
+![Board manufacturing](Images/board6.jpg)
 ### Finished
-![Board manufacturing](Images/board7.png)
+![Board manufacturing](Images/board7.jpg)
 
 ## Schematic
 The schematic can be found [here](Schematic/PocketPilot2.pdf).
